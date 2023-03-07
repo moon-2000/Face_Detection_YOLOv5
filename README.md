@@ -12,7 +12,7 @@ Yolov5 is using technique of pruning in a way that “randomly in some percentag
 * Validate the model on a test subset using val.py file
 * Copy best.py file and store it in another folder, as pruning will overwrite this file
 * Edit the val.py file adding the pecentage of pruning you want before configure part as [here](https://medium.com/nerd-for-tech/how-to-prune-sparse-yolov5-da19e1d84a6)  
-         from utils.torch_utils import prune
+*        from utils.torch_utils import prune
          prune(model,0.3)   # 0.3 is pruning 30% of the weights 
 * Validate the model again with val.py and compare the rersults
 
